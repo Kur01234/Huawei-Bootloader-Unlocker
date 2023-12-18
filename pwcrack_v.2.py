@@ -26,9 +26,9 @@ def incrementChecksum(oemCode, checksum, imei):
     oemCode += int(checksum + sqrt(int(imei)) * 1024)
     return oemCode
  
-imei = "861819045038115"
+imei = "IMEI_Code"
 checksum = int(checkLuhn(imei))
-oemCode = 15541700778880
+oemCode = 1
 lastOem = oemCode
 
 
